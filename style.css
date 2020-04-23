@@ -40,6 +40,11 @@ section p{
     text-transform: uppercase;
     color: rgba(255, 255, 255, .03);
 }
+.preloader.active{
+    transform: translateY(-100vh);
+    transition: ease-in-out 2s;
+    transition-delay: 1s;
+}
 .counter{
     position: relative;
     color: #fff;
@@ -50,4 +55,9 @@ section p{
 .counter::after{
     content: '%';
     font-size: 0.5em;
+}
+.hide{
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
 }
